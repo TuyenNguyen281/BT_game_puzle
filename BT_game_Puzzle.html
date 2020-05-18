@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Puzzle</title>
+</head>
+<body>
+<div>
+    <img src="img/a1.jpg" height="160" width="800" onclick="changeImage1(this)">
+    <img src="img/b2.jpg" height="160" width="800" onclick="changeImage2(this)">
+    <img src="img/c3.jpg" height="160" width="800" onclick="changeImage3(this)">
+    <img src="img/d1.jpg" height="160" width="800" onclick="changeImage4(this)">
+    <img src="img/e2.jpg" height="160" width="800" onclick="changeImage5(this)">
+</div>
+    <script>
+    let n = 0;
+    function changeImage1(value) {
+        n++;
+        let img = "img/a"+n+".jpg";
+        if(n==3){
+            n=0;
+        }
+        value.src=img;
+        console.log(img);
+    }
+    let m = 0;
+    function changeImage2(value) {
+        m++;
+        let img = "img/b"+m+".jpg";
+        if(m==3){
+            m = 0;
+        }
+        value.src=img;
+    }
+    let o = 0;
+    function changeImage3(value) {
+        o++;
+        let img = "img/c"+o+".jpg";
+        if(o == 3){
+            o = 0;
+        }
+        value.src=img;
+    }
+    let p = 0;
+    function changeImage4(value) {
+        p++;
+        let img = "img/d"+p+".jpg";
+        if(p == 3){
+            p = 0;
+        }
+        value.src=img;
+    }
+    let e = 0;
+    function changeImage5(value) {
+        e++;
+        let img = "img/e"+e+".jpg";
+        if(e == 0){
+            e = 1;
+        }
+        value.src=img;
+    }
+
+
+
+
+
+    // let n = 1;
+    // function changeImage1(value) {
+    //     n++;
+    //     let img = "img/a"+n+".jpg";
+    //     if(n==4){
+    //         n=1;
+    //     }
+    //     value.src=img;
+    //     console.log(img);
+    // }
+</script>
+
+</body>
+</html>
